@@ -1,0 +1,210 @@
+$blue: hsl(246, 80%, 60%);
+$light-red-one: hsl(15, 100%, 70%);
+$soft-blue: hsl(195, 74%, 62%);
+$light-red-two: hsl(348, 100%, 68%);
+$lime-green: hsl(145, 58%, 55%);
+$violet: hsl(264, 64%, 52%);
+$soft-orange: hsl(43, 84%, 65%);
+$very-dark-blue: hsl(226, 43%, 10%);
+$dark-blue: hsl(235, 46%, 20%);
+$desaturated-blue: hsl(235, 45%, 61%);
+$pale-blue: hsl(236, 100%, 87%);
+$card-hover: rgb(52, 57, 123);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+body{
+    background-color: $very-dark-blue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-tracking{
+    width: 100vw;
+    height: 100vh;
+    padding: 3.5rem 9rem 4.7rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+
+    .user-card{
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        
+        font-weight: 300;
+        background-color: $dark-blue;
+        border-radius: 1rem;
+    
+        .user-detail{
+            width: 100%;
+            display: flex;
+            flex-basis: 68.4%;
+            flex-direction: column; 
+            padding: 1.86rem 1.5rem;
+            background-color: $blue;
+            border-radius: 1rem;
+            
+            img{
+                border: 2px solid white;
+                border-radius: 50%;
+                width: 4.3rem;
+                margin-bottom: 2.15rem;
+            }
+            small{
+                color: $pale-blue;
+                font-size: .7rem;
+                font-weight: 300;
+                margin-bottom: .25rem;
+            }
+            h2{
+                font-size: 2.1rem;
+                color: white;
+                font-weight: 300;
+            }
+        }
+
+        .timeframe{
+            width: 100%;
+            padding: 1.3rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: .95rem;
+        
+            .option{
+                font-size: 1rem;
+                font-weight: 400;
+                color: $desaturated-blue;
+                cursor: pointer;
+                
+                &:hover{
+                    color: white;
+                }
+            }
+
+            .active{
+                color: white;
+            }
+        }
+    }
+    
+    .report-card{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        position: relative;
+        gap: 1.5rem;
+        overflow: hidden;
+    
+        .card{
+            position: relative;
+            width: 100%;
+            border-radius: 1rem 1rem 2rem 2rem;
+    
+            .card-content{
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                height: 81.5%;
+                background-color: $dark-blue;
+                border-radius: 1rem;
+                padding: 1.5rem;
+                overflow: hidden;
+    
+                .row{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    .title{
+                        font-size: .95rem;
+                        font-weight: 400;
+                    }
+    
+                    .btn-option{
+                        margin-right: .5rem;
+                        width: .75rem;
+                        height: 100%;
+                        cursor: pointer;
+                    }
+                }
+    
+                .current-hours{
+                    font-size: 3rem;
+                    margin: 1.3rem 0 .32rem 0;
+                    font-weight: 300;
+                }
+    
+                .previous-hours{
+                    font-size: .75rem;
+                    font-weight: 400;
+                    color: $desaturated-blue;
+                }
+                &:hover{
+                    background-color: $card-hover;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .work{
+        background-color: $light-red-one;
+        background-image: url(./images/icon-work.svg);
+        background-repeat: no-repeat;
+        background-position: 90% -6.5%;
+    }
+
+    .play{
+        background-color: $soft-blue;
+        background-image: url(./images/icon-play.svg);
+        background-repeat: no-repeat;
+        background-position: 90% -6.5%;
+    }
+
+    .study{
+        background-color: $light-red-two;
+        background-image: url(./images/icon-study.svg);
+        background-repeat: no-repeat;
+        background-position: 90% -6.5%;
+    }
+
+    .exercise{
+        background-color: $lime-green;
+        background-image: url(./images/icon-exercise.svg);
+        background-repeat: no-repeat;
+        background-position: 90% -6.5%;
+    }
+
+    .social{
+        background-color: $violet;
+        background-image: url(./images/icon-social.svg);
+        background-repeat: no-repeat;
+        background-position: 90% -6.5%;
+    }
+
+    .self-care{
+        background-color: $soft-orange;
+        background-image: url(./images/icon-self-care.svg);
+        background-repeat: no-repeat;
+        background-position: 90% -6.5%;
+    }
+}
+

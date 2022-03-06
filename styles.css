@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+body {
+  background-color: #0f1424;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-tracking {
+  width: 100vw;
+  height: 100vh;
+  padding: 3.5rem 9rem 4.7rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.time-tracking .user-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 300;
+  background-color: #1c1f4a;
+  border-radius: 1rem;
+}
+.time-tracking .user-card .user-detail {
+  width: 100%;
+  display: flex;
+  flex-basis: 68.4%;
+  flex-direction: column;
+  padding: 1.86rem 1.5rem;
+  background-color: #5847eb;
+  border-radius: 1rem;
+}
+.time-tracking .user-card .user-detail img {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 4.3rem;
+  margin-bottom: 2.15rem;
+}
+.time-tracking .user-card .user-detail small {
+  color: #bdc1ff;
+  font-size: 0.7rem;
+  font-weight: 300;
+  margin-bottom: 0.25rem;
+}
+.time-tracking .user-card .user-detail h2 {
+  font-size: 2.1rem;
+  color: white;
+  font-weight: 300;
+}
+.time-tracking .user-card .timeframe {
+  width: 100%;
+  padding: 1.3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.95rem;
+}
+.time-tracking .user-card .timeframe .option {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6f76c8;
+  cursor: pointer;
+}
+.time-tracking .user-card .timeframe .option:hover {
+  color: white;
+}
+.time-tracking .user-card .timeframe .active {
+  color: white;
+}
+.time-tracking .report-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  gap: 1.5rem;
+  overflow: hidden;
+}
+.time-tracking .report-card .card {
+  position: relative;
+  width: 100%;
+  border-radius: 1rem 1rem 2rem 2rem;
+}
+.time-tracking .report-card .card .card-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 81.5%;
+  background-color: #1c1f4a;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+.time-tracking .report-card .card .card-content .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.time-tracking .report-card .card .card-content .row .title {
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+.time-tracking .report-card .card .card-content .row .btn-option {
+  margin-right: 0.5rem;
+  width: 0.75rem;
+  height: 100%;
+  cursor: pointer;
+}
+.time-tracking .report-card .card .card-content .current-hours {
+  font-size: 3rem;
+  margin: 1.3rem 0 0.32rem 0;
+  font-weight: 300;
+}
+.time-tracking .report-card .card .card-content .previous-hours {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #6f76c8;
+}
+.time-tracking .report-card .card .card-content:hover {
+  background-color: #34397b;
+  cursor: pointer;
+}
+.time-tracking .work {
+  background-color: #ff8c66;
+  background-image: url(./images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: 90% -6.5%;
+}
+.time-tracking .play {
+  background-color: #56c2e6;
+  background-image: url(./images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: 90% -6.5%;
+}
+.time-tracking .study {
+  background-color: #ff5c7c;
+  background-image: url(./images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: 90% -6.5%;
+}
+.time-tracking .exercise {
+  background-color: #4acf81;
+  background-image: url(./images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: 90% -6.5%;
+}
+.time-tracking .social {
+  background-color: #7536d3;
+  background-image: url(./images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: 90% -6.5%;
+}
+.time-tracking .self-care {
+  background-color: #f1c65b;
+  background-image: url(./images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: 90% -6.5%;
+}/*# sourceMappingURL=styles.css.map */
